@@ -58,8 +58,8 @@ body{
 }
 
 .container:hover{
-    width: 400px;
-    padding: 0 60px 0 60px;
+    /* width: 400px; */
+    /* padding: 0 60px 0 60px; */
     box-shadow: rgba(71, 30, 0, 0.365) 5px 7px;
 }
 
@@ -68,7 +68,7 @@ body{
 }
 
 .container:hover .heading{
-    display: block;
+    /* display: block; */
 }
 
 .container::before {
@@ -88,7 +88,7 @@ body{
 .container:hover .lines-parent{
     /* animation: 1s new; */
     /* height: 2px; */
-    width: 60px;
+    width: 80px;
 }
 .container:hover .top{
     /* transform: translateY(0);
