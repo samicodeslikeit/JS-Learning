@@ -2,6 +2,7 @@ function StopWatch() {
   let hasStarted = false;
   let startTime, endTime;
   let lastSessionDuration = new Date();
+  let indexNumber = 0;
 
   // Method to Start the stopwatch
   this.start = function () {
