@@ -58,17 +58,17 @@ body{
 }
 
 .container:hover{
-    /* width: 400px; */
+    width: 400px;
     /* padding: 0 60px 0 60px; */
-    box-shadow: rgba(71, 30, 0, 0.365) 5px 7px;
+    /* box-shadow: rgba(71, 30, 0, 0.365) 5px 7px; */
 }
 
 .container:hover::before{
-    width: 100%;
+    /* width: 100%; */
 }
 
 .container:hover .heading{
-    /* display: block; */
+    display: block;
 }
 
 .container::before {
@@ -96,7 +96,7 @@ body{
     top: 50%; */
     /* left: 50%; */
     /* transform: translate(0, -50%); */
-    animation: 1s new forwards;
+    animation: 0.5s new forwards;
 }
 .container:hover .bottom{
     /* transform: translateY(0);
@@ -104,12 +104,12 @@ body{
     top: 50%; */
     /* left: 50%; */
     /* transform: translate(0, -50%); */
-    animation: 1s new2 forwards;
+    animation: 0.5s new2 forwards;
     /* transform: translateY(-3px)rotate(-45deg); */
 }
 
 .container:hover .line{
-    background-color: white;
+    /* background-color: white; */
 }
 
 @keyframes new{
@@ -137,4 +137,16 @@ body{
     100%{
         transform: translateY(-8px)rotate(-45deg);
     }
+}
+
+.rotating-div{
+    height: 150px;
+    width: 150px;
+    background-color: beige;;
+    transition: all 0.5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.rotating-div:hover{
+    transform: rotateX(180deg);
 }
